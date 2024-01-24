@@ -1,4 +1,4 @@
-# Group-Assignment2-Cinema-Project
+# Assignment 2 in Javascript Backend Course
 
 # Best Practices
 - Language used in commits: English.
