@@ -1,12 +1,3 @@
-import express from "express";
+import app from './src/app.js';
 
-const app = express();
-const port = 5080;
-
-app.get('/', (req, res) => {
-  res.send('WELCOME');
-});
-
-app.listen(port, () => {
-  console.log(`Server is running on port ${port}`);
-});
+app.listen(5080);
