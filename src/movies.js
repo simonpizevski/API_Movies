@@ -11,5 +11,8 @@ export async function loadMovies() {
 export async function loadMovie(id) {
     const res = await fetch(API + '/movies/' + id);
     const payload = await res.json();
-    return payload.data;
+    return {
+        id: payload.data.id, 
+        ...payload.data.attributes,
+    };
 }

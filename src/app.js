@@ -22,8 +22,8 @@ app.get('/movies/:id', async (req, res) => {
   res.render('movie', { movie });
 });
 
-app.get('/', async (req, res) => {
-  res.render('contact', { contact });
+app.get('/contact', async (req, res) => {
+  res.render('contact');
 });
 
 app.use('/static', express.static('./static'));

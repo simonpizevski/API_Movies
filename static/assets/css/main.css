@@ -4,10 +4,96 @@ html {
   font-size: 1rem;
   background-color: black;
   color: white;
+  display: block;
+  overflow-x: hidden;
+  height: 100vh;
 }
 
-.movie-links {
+.navbar {
+  display: flex;
+  width: 100%;
+  background-color: rgb(126, 15, 15);
+  min-height: 10rem;
+}
+.navbar ul {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  width: 100%;
+  list-style-type: none;
+}
+.navbar ul li a {
   text-decoration: none;
+  color: white;
+  font-size: 2rem;
+  font-weight: 700;
+}
+.navbar ul li a:hover {
+  color: rgb(0, 0, 0);
+}
+
+.footer {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 10rem;
+  color: darkgrey;
+  width: auto;
+  padding: 1rem;
+  margin-bottom: 1rem;
+  display: flex;
+}
+.footer h2 {
+  color: white;
+  font-size: 1.2rem;
+}
+.footer p {
+  font-size: 0.8rem;
+}
+.footer a {
+  text-decoration: none;
+  color: white;
+}
+
+.movie-info {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.movie-info h1 {
+  font-size: 4rem;
+}
+.movie-info img {
+  height: 30rem;
+  width: 20rem;
+  margin-bottom: 2rem;
+}
+.movie-info div {
+  font-size: 2rem;
+  font-style: italic;
+  max-width: 20rem;
+}
+
+.movie-list {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  list-style-type: none;
+}
+.movie-list h1 {
+  font-size: 4rem;
+  color: rgb(126, 15, 15);
+}
+.movie-list li a {
+  font-size: 2rem;
+  font-weight: 700;
+  text-decoration: none;
+  color: white;
+}
+.movie-list li a:hover {
+  color: rgb(126, 15, 15);
 }
 
 /*# sourceMappingURL=main.css.map */

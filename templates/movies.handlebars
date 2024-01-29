@@ -1,7 +1,8 @@
-<ul>
+<ul class="movie-list">
+    <h1>Current movies</h1>
     {{#each movies}}
     <li>
-        <a class="movie-links" href="/movies/{{ this.id }}">
+        <a href="/movies/{{ this.id }}">
         {{ this.attributes.title }}
         </a>
     </li>
