@@ -28,4 +28,8 @@ app.get('/contact', async (req, res) => {
 
 app.use('/static', express.static('./static'));
 
+app.get('*', async (req, res) => {
+  res.status(404).render('404');
+});
+
 export default app;
